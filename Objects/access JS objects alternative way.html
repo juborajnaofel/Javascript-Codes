@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Create and access js objects</title>
+	</head>
+	<body>
+		<button onclick="myFun()">click here</button>
+		<p id="here"></p>
+		<script>
+			function myFun() {
+			  var me = {
+				f_name: "Juboraj",
+				l_name: "Naofel",
+				fav_movie: "3-idots",
+				fav_value: 0
+			  };
+			  document.getElementById("here").innerHTML = me["f_name"] + " likes " + me.fav_movie + " and " + me.fav_value;
+			}
+		</script>
+	</body>
+</html>

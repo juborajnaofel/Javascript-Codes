@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>JS object methods</title>
+	</head>
+	<body>
+		<button onclick="myFun()">click here</button>
+		<p id="here"></p>
+		<script>
+			function myFun() {
+			  var me = {
+				f_name: "Juboraj",
+				l_name: "Naofel",
+				fav_movie: "3-idots",
+				fav_value: 0,
+				nameMe : function() {
+					return this.f_name + " " + this.l_name;
+				  }
+			  };
+			  document.getElementById("here").innerHTML = me.nameMe();
+			}
+		</script>
+	</body>
+</html>
