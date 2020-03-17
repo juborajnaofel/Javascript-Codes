@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Onlclick JS event</title>
+	</head>
+	<body>
+		<button onclick="fun()">The Time is</button>
+		<p id="here"></p>
+		<script>
+			function fun(){
+				var str = "This is my JS Example";
+				var n = str.search("JS");
+				document.getElementById('here').innerHTML = n + " is the position where it is found";
+			}
+		</script>
+	</body>
+</html>
