@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<style>
+			body{
+                background: #222;
+                margin-top: 20px;
+                color: aliceblue;
+                font-family: sans-serif;
+				
+			}
+            .thumbnail img{
+                height: 80px;
+                border: 4px solid #555;
+                padding: 1px;
+                margin: 0px 10px 10px 0px; 
+            }
+            .thumbnail img:hover{
+                border: 4px solid #00ccff;
+            }
+            .preview img{
+                border: 4px solid #555;
+                padding: 1px;
+                width:30%;
+            }
+		</style>
+    </head>
+    <body>
+        <div id="container" align="center">
+            <h1>Gallery</h1>
+            <br>
+            <div align="center" class="thumbnail">
+                <img onmouseover="preview.src=image1.src"  name="image1" src="image1.png">                
+                <img onmouseover="preview.src=image2.src"  name="image2" src="image2.png">  
+            </div>
+            <div class="preview" align+"center">
+                <img name="preview" src="image1.png">
+            </div>
+        </div>
+        <script>
+            var arr = ["image.png","image.png"];
+            document.body.style.background = arr[Math.floor(Math.random()*arr.length)];
+        </script>
+    
+    
+    </body>
+</html>
